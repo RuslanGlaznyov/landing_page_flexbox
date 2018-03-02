@@ -1,0 +1,352 @@
+*{
+	box-sizing: border-box;
+
+}
+ul, nav{
+	list-style: none;
+}
+section{
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding:125px 100px;
+}
+h1,h2{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-family:'Maven Pro' ;
+	font-size: 60px;
+}
+.description{
+	font-size: 16px;
+  font-family: "Maven Pro";
+  color: rgb(159, 164, 175)
+}
+.heading {
+  font-size: 42px;
+  font-family: "Maven Pro";
+  color: rgb(79, 79, 111);
+}
+.caption {
+  font-size: 14px;
+  font-family: "Maven Pro";
+  color: rgb(159, 164, 175);
+  font-weight: bold;
+  text-transform: uppercase;
+ }
+
+h3{
+  font-size: 14px;
+  font-family: 'Maven Pro';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+p{
+  font-size: 16px;
+  font-family: "Maven Pro";
+}
+
+/*=============header==========*/
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 25px 50px 0 50px;
+	z-index: 999;
+
+}
+	header .logo{
+		display: flex;
+		align-items: center;
+		cursor: pointer;
+	}
+		header .logo .logo-text{
+			font-size: 30px;
+			font-family: "Maven Pro";
+			font-weight: bold;
+			text-transform: uppercase;
+			color:#fff;
+		}
+	header nav {
+		display: flex;
+		flex-wrap:wrap;
+		justify-content: center;
+	}
+		header nav li{
+			list-style-type: none;
+			padding: 25px;
+		}
+		header nav .menu-item{
+			border-bottom: 2px solid transparent;
+			transition: 0.35s;
+		}
+		header nav .menu-item:hover{
+			border-bottom: 2px solid #fff;
+		}
+		header nav .get-started-btn{
+			margin-left:20px;
+			text-transform: uppercase;
+			padding-left:35px;
+			padding-right:35px;
+			border:1px solid #fff;
+			cursor: pointer;
+			border-radius: 100px;
+		}
+		header nav li a{
+			color:#fff;
+			text-decoration:none;
+			font-size: 16px;
+			font-family: "Maven Pro";
+		}
+
+/*==========section#banner========*/
+#banner{
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	min-height: 100vh;
+	color: #fff;
+
+}
+	.banner-item{
+		width: 40%;
+	}
+
+	.bg-img{
+		position: absolute;
+		top: 0;left: 0;
+		width: 100%;
+		height: 100%;
+		background-size:cover;
+		background-position:center;
+		background-image: url(../img/bg.jpg);
+		z-index: -1;
+	}
+	.bg-img:after{
+		content:'';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: -webkit-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+    background-image: -o-linear-gradient(60deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+    background-image: linear-gradient(150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+		opacity: 0.75;
+	}
+	.down-arrow{
+		position: absolute;
+		bottom :0;
+	}
+
+/*==================select-plan===============*/
+#select-plan{
+	background-color:#f9fafc;
+	padding: 0px 100px;
+	justify-content: space-around;
+	text-align: center;
+	min-height: 100vh;
+	//background-color: #aaa;
+}
+	.price-icon{
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+	.price-icon .icon{
+		border: 1px solid #dee1ec;
+		border-radius: 25px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+		text-align: center;
+		padding: 10px 30px 15px 30px;
+		width:350px;
+		height: 425px;
+		background-color:#f9fafc;
+		transition: 0.5s;
+	}
+	.price-icon .icon:hover{
+		border-color : transparent;
+		box-shadow: 0px 0px 81.88px 10.12px rgba(204, 204, 223, 0.71);
+		background-color:#fff;
+	}
+	.caption{
+		margin: 0;
+	}
+	.heading{
+		margin: 10px 0;
+	}
+	.description{
+		margin: 0;
+	}
+	.banner-plan{
+		display: inline-block;
+		margin: 20px 0;
+		width: 40%;
+	}
+	.month-price{
+		font-size: 16px;
+		font-family: "Maven Pro";
+	}
+	.doll{
+		font-size: 16px;
+		font-family: "Maven Pro";
+		vertical-align:20px;
+	}
+	.price-btn{
+		border: 1px solid rgb(215, 219, 232);
+		font-family: "Maven Pro";
+		font-size: 12px;
+		font-weight: bold;
+		text-transform: uppercase;
+		cursor: pointer;
+		padding: 15px 35px 15px 35px;
+		border-radius: 30px;
+		background-color:#fff;
+		color: rgb(159, 164, 175);
+		box-shadow: 0px 0px 18.69px 2.31px rgba(204, 204, 223, 0.5);
+		transition: 1s;
+	}
+	.price-btn:hover{
+		background-color:#6e45e2;
+		color:#fff;
+	}
+		.price-icon .icon img{
+			width: 95px;
+		}
+
+/*================================section#take-control=============*/
+#take-control{
+	position: relative;
+	min-height: 70vh;
+	justify-content: center;
+}
+	#take-control .banner{
+		color: #fff;
+		text-align: center;
+	}
+	#take-control .map-bg {
+		position: absolute;
+		top: 0;left: 0;
+		width: 100%;
+		height: 100%;
+		background-size:cover;
+		background-position:center;
+		background-image: url("../img/map-bg.png");
+		z-index: -1;
+	}
+	#take-control .map-bg:after{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: -moz-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+    background-image: -webkit-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+    background-image: -ms-linear-gradient( 150deg, rgb(136,211,206) 0%, rgb(110,69,226) 100%);
+		opacity: 0.7;
+	}
+	.buttons .price-btn{
+		margin: 5px;
+		width: 200px;
+		box-shadow: none;
+		border: none;
+	}
+	.header-footer{
+		min-height: 20vh;
+		position: relative;
+	}
+	.header-footer .logo .logo-text{
+		color:#37374a;
+	}
+		.header-footer nav li a{
+			font-weight: bold;
+			color:#6a6a77;
+		}
+		.header-footer nav .menu-item a:hover{
+			color:#756edc;
+		}
+		.header-footer nav .get-started-btn{
+			background-color: #756edc;
+		}
+		.header-footer nav .get-started-btn a{
+			color:#fff;
+		}
+		footer{
+			margin: 0 50px;
+			display: flex;
+			min-height: 10vh;
+			justify-content: space-between;
+			align-items: center;
+		}
+		footer p{
+			font-size: 14px;
+			font-family: "Maven Pro";
+			color: rgba(106, 106, 119, 0.502);
+		}
+		footer .social i{
+			margin: 0 5px;
+			color: rgba(106, 106, 119, 0.502);
+			cursor: pointer;
+		}
+
+/*==============================media===========================*/
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) {
+	#header-top{
+		flex-direction: column;
+	}
+	.price-icon{
+		margin:25px 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header-footer{
+		flex-direction: column;
+	}
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+//Medium screens
+@media only screen and (min-width: 40.063em) { } /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 67em) {
+	#header-top{
+		flex-direction: column;
+	}
+	.price-icon{
+		margin:0 25px;
+	}
+	section#select-plan{
+		padding: 50px;
+	}
+	.price-icon .icon{
+		width: 300px;
+	}
+	.header-footer{
+		flex-direction: column;
+	}
+	.price-icon{
+		margin:25px 0;
+		flex-direction: column;
+		align-items: center;
+	}
+	.price-icon .icon{
+ 	margin: 25px 0;
+ }
+ .banner-item{
+ 	width: 60%;
+ }
+ .banner-plan{
+ 	width: 60%;
+ }
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */

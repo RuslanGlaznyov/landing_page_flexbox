@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="69" height="70" viewBox="0 0 69 70">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6e45e2;
+        filter: url(#filter);
+      }
+    </style>
+    <filter id="filter" x="-19" y="-19" width="109" height="109" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" in="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="4.583"/>
+      <feFlood result="flood" flood-color="#ccccdf" flood-opacity="0.5"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+      <feFlood result="flood-2" flood-color="#fff"/>
+      <feComposite result="composite-2" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend-2" in2="blend"/>
+    </filter>
+  </defs>
+  <rect id="Rounded_Rectangle_1_copy" data-name="Rounded Rectangle 1 copy" class="cls-1" x="3" y="3" width="64" height="64" rx="32" ry="32"/>
+  <image id="arrows-16px-1_tail-down" x="28" y="27" width="14" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAQBAMAAADUulMJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAJ1BMVEX///+fpK+fpK+fpK+fpK+fpK+fpK+fpK+fpK+fpK+fpK+fpK8AAACpCcxZAAAAC3RSTlMAEAYc2Vt//QGXa1yGswUAAAABYktHRAyBs1FjAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAB3RJTUUH4QoIDTkIlk/EEgAAAEpJREFUCNdjYGBg2C3AAAYk0UxgWoHBJABIszozZJcC6fBtDJ3bA3aLVs9g4Jhdunv5zgYGoMDu3TOAGjhm7wZxgQJgLlBgJpALABtyGtILzZZYAAAAAElFTkSuQmCC"/>
+</svg>
